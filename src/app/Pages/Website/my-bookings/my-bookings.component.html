@@ -1,0 +1,20 @@
+<p>my-bookings works!</p>
+<div class="bookings-container">
+    <h2>My Bookings</h2>
+    <div *ngIf="bookings.length > 0; else noBookings">
+        <ul>
+            <li *ngFor="let booking of bookings">
+                <div class="booking">
+                    <h3>{{ booking.flight }}</h3>
+                    <p>Origin: {{ booking.origin }}</p>
+                    <p>Destination: {{ booking.destination }}</p>
+                    <p>Departure Date: {{ booking.departureDate }}</p>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+    <ng-template #noBookings>
+        <p>You have no bookings.</p>
+    </ng-template>
+</div>

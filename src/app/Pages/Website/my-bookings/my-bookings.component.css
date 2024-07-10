@@ -1,0 +1,22 @@
+.bookings-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.booking {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.booking h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.booking p {
+    margin: 5px 0;
+}
